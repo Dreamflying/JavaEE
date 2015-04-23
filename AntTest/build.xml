@@ -19,8 +19,10 @@
         <delete dir="${dest}" />
         <delete file="${hello_jar}" />
     </target>
+    
     <target name="rerun" depends="clean,run">
         <ant target="clean" />
         <ant target="run" />
     </target>
+    
 </project>
